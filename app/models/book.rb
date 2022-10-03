@@ -5,7 +5,7 @@ class Book < ApplicationRecord
   has_many :book_comments, dependent: :destroy
   has_one_attached :profile_image
 
-  has_many :view_counts, dependent: :destroy
+  has_many :view_countsss
 
   validates :title,presence:true
   validates :body,presence:true,length:{maximum:200}
